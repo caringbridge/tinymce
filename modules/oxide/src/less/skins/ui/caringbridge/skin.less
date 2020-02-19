@@ -1,0 +1,46 @@
+/**
+ * Copyright (c) Tiny Technologies, Inc. All rights reserved.
+ * Licensed under the LGPL or a commercial license.
+ * For LGPL see License.txt in the project root for license information.
+ * For commercial licenses see https://www.tiny.cloud/
+ */
+
+@import 'src/less/theme/theme';
+
+//
+// Place your variables here
+//
+@light-berry: #a21984;
+@dark-berry: #6e175b;
+
+@color-black: #2d2d2d;
+@color-tint: @light-berry;
+@color-error: #e43d43;
+@color-success: #008746;
+@font-stack: Lato, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+// Overlay
+@dialog-backdrop-background-color: rgba(59,10,46,.95);
+
+// Primary button
+@button-border-radius: 500px; // Weird hack to make a pill button regardless of height/width.
+@button-font-family: Greycliff, Lato, sans-serif;
+@button-hover-background-color: @dark-berry;
+
+// Secondary button
+@button-secondary-background-color: transparent;
+@button-secondary-border-color: @light-berry;
+@button-secondary-border-radius: 500px;
+@button-secondary-border-width: 2px;
+@button-secondary-hover-border-color: @dark-berry;
+@button-secondary-text-color: @light-berry;
+@button-secondary-hover-text-color: @dark-berry;
+
+// Naked button
+.tox {
+  .tox-button--naked {
+    &:hover:not(:disabled) {
+      border-color: transparent;
+    }
+  }
+}
